@@ -1,0 +1,39 @@
+body {
+    font-size: 150%;
+}
+
+div.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+div.container > * {
+    margin: 1em;
+}
+
+table.puzzle {
+    border: thick solid black;
+    border-collapse: collapse;
+    padding: 2em;
+}
+
+table.puzzle td {
+    width: 3rem;
+    height: 3rem;
+    border: medium solid black;
+    text-align: center;
+}
+
+table.puzzle td.black {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+table.puzzle td.highlight {
+    background-color: azure;
+}
+
+table.puzzle td.bulb::before {
+    content: "\1F4A1";
+}
